@@ -1,0 +1,227 @@
+
+html {
+  font-size: 24px;
+}
+
+
+@media (max-width: 767px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  html {
+   font-size: 24px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+.navbar {
+  background: navy;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px (black);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-link {
+  color: whitesmoke;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: aliceblue;
+}
+
+
+header,
+footer {
+  padding: 10px 0;
+  text-align: center;
+  color: azure;
+}
+
+/* ---------- 6) Buttons (Glow on Hover) ---------- */
+button,
+.btn {
+  /* TODO 18: Style buttons with white text and a soft border */
+  /* Hints:
+     color: #fff;
+     padding: 0.5rem 1rem;
+     font-size: 0.9rem;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     transition: all 0.3s ease;
+  */
+}
+
+button:hover,
+.btn:hover {
+  /* TODO 19: Make the border brighter and add glow on hover */
+  /* Hints:
+     border-color: rgba(255, 255, 255, 0.5);
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  */
+}
+
+/* ---------- 7) Date Input Group (Glass Panel) ---------- */
+.input-group.date {
+  /* TODO 20: Create a dark glass card look */
+  /* Hints:
+     background: rgba(0, 0, 0, 0.16);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(10.2px);
+     border: 1px solid rgba(0, 0, 0, 0.08);
+  */
+}
+
+.input-group.date .form-control {
+  /* TODO 21: Make the input transparent with white text */
+  /* Hints:
+     background: transparent;
+     color: #fff;
+     box-shadow: none;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     transition: all 0.3s ease;
+  */
+}
+
+/* ---------- 8) Date Picker Input (Hover + Focus Glow) ---------- */
+input[type="date"] {
+  /* TODO 22: Match the glass input style */
+  /* Hints:
+     color: white;
+     background-color: transparent;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     transition: all 0.3s ease;
+  */
+}
+
+input[type="date"]:hover,
+input[type="date"]:focus {
+  /* TODO 23: Add glow on hover/focus */
+  /* Hints:
+     border-color: rgba(255, 255, 255, 0.5);
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* TODO 24: Make calendar icon visible on dark background */
+  /* Hints:
+     filter: invert(1);
+     opacity: 1;
+     cursor: pointer;
+  */
+}
+
+/* ---------- 9) Glass Cards (Reusable Style) ---------- */
+.card,
+.glass {
+  /* TODO 25: Reusable glass panel style for cards */
+  /* Hints:
+     background: rgba(0, 0, 0, 0.16);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(15px);
+     border: 1px solid rgba(0, 0, 0, 0.08);
+  */
+}
+
+/* ---------- 10) APOD Image Area ---------- */
+#apodImage {
+  /* TODO 26: Make the APOD background image fit nicely */
+  /* Hints:
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+  */
+
+  /* TODO 27: Set a minimum height so the image area is visible */
+  /* Hint: min-height: 200px; */
+}
+
+/* TODO 28: Adjust APOD image area heights for different screen sizes */
+@media (max-width: 576px) {
+  #apodImage {
+    /* min-height: 200px; */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #apodImage {
+    /* min-height: 300px; */
+  }
+}
+
+@media (min-width: 769px) {
+  #apodImage {
+    /* min-height: 400px; */
+  }
+}
+
+/* ---------- 11) Layering / Readability ---------- */
+.navbar,
+.h3,
+.container {
+  /* TODO 29: Ensure content stays above the video background */
+  /* Hints:
+     z-index: 1;
+     color: white;
+  */
+}
+
+/* ---------- 12) Video Background ---------- */
+#video-background {
+  /* TODO 30: Fix video to cover the full screen behind everything */
+  /* Hints:
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+  */
+}
